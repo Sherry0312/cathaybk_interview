@@ -21,8 +21,8 @@ class ActionUtils:
         return elem
 
     def save_the_screenshot(self, filename):
-        self.driver.get_screenshot_as_file(f"{filename}.png")
+        self.driver.get_screenshot_as_file(f"./Screenshot/{filename}.png")
 
     def get_the_screenshot_list(self, number):
-        self.screenshot_list.append(self.driver.get_screenshot_as_file(f"Screenshot_{number}.png"))
+        self.screenshot_list.append(self.driver.get_screenshot_as_file(f"./Screenshot/Screenshot_{number}.png"))
         return self.screenshot_list
